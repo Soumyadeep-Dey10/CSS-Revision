@@ -1,0 +1,19 @@
+#p1{
+    background-color: blue;
+}
+#p2{
+    background-color: red;
+}
+
+.heading{
+    color: #31383f;
+}
+
+nav,aside{
+    background-color: #7a2681;
+    color: white;
+}
+
+*{
+    color: aqua;
+}
