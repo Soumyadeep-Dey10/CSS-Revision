@@ -19,9 +19,11 @@
             display: grid;
             padding: 10px;
             /* grid-template-rows: 100px 100px 1000px; */
-            grid-template-rows: repeat(4, 1fr);
+            /* grid-template-rows: repeat(4, 1fr);
 
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 500px)); 
+            /* min width will be 200 and max will be 500  */
 
             row-gap: 10px;
             column-gap: 10px;
@@ -40,7 +42,9 @@
             place-self : center;
             */
         }
-        .header{
+
+        /* column start and end or row start and end will not work with auto-fit for responsive */
+        /* .header{
             grid-column-start: 1;
             grid-column-end: 4;
         }
@@ -55,7 +59,7 @@
         .footer{
             grid-column-start: 1;
             grid-column-end: 4;
-        }
+        } */
     </style>
 </head>
 <body>
